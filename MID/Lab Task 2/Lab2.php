@@ -92,7 +92,9 @@
         </table>
     </form>
     </div>
+    <div class="overflow">
 
-    
+        <p>Welcome to our bank! Please fill out the form above to create your account.</p>
+    </div>
 </body>
 </html>
