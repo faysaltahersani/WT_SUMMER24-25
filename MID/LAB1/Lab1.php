@@ -77,6 +77,6 @@
 
         </table>
 
-                <button>Register</button>
+                <button>Sign Up</button>
 </body>
 </html>
