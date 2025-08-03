@@ -21,18 +21,20 @@
     var total = subject.math + subject.java + subject.webtec;
     var avg = total/3;
 
+    // Check condition in console output
     console.log("\n Conditions");
     var chkAdult = age >=18;
     var chkPass = avg >=50;
     console.log("Check Adult:", chkAdult);
     console.log("Check Pass:", chkPass);
 
+    // Show in the console output
     var sub = ["Math", "Java", "WebTec"];
     var subMark = [50, 75, 90];
-    /*for (var i = 0; i <3; i++)
+    for (var i = 0; i <3; i++)
     {
       console.log(sub[i] + ": " + subMark[i]);
-    }*/
+    }
 
     // Show result popup
     function showStudentResult() {
