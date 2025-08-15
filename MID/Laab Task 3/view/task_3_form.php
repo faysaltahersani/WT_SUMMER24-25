@@ -22,11 +22,11 @@
 
       <label>Donation Amount</label>
       <div class="donation-options">
-        <label><input type="radio" name="amount" value="0"> None</label>
-        <label><input type="radio" name="amount" value="500"> 500 BDT</label>
-        <label><input type="radio" name="amount" value="1000"> 1000 BDT</label>
-        <label><input type="radio" name="amount" value="2000"> 2000 BDT</label>
-        <label><input type="radio" name="amount" value="3000"> 3000 BDT</label>
+        <label><input type="radio" name="amount"> None</label>
+        <label><input type="radio" name="amount"> 500 BDT</label>
+        <label><input type="radio" name="amount"> 1000 BDT</label>
+        <label><input type="radio" name="amount"> 2000 BDT</label>
+        <label><input type="radio" name="amount"> 3000 BDT</label>
       </div>
 
       <label>Payment Method</label>

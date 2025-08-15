@@ -11,20 +11,24 @@ function validateForm() {
     var payment = form.payment.value;
     var terms = form.terms.checked;
 
-    if (name === "" || !/^[A-Za-z\s]+$/.test(name)) {
-        alert("Enter a valid name (alphabets only).");
+    if (!name && !email && !phone && !password && !amount && !payment && !terms) {
+        alert("Please fill out the form!");
+        return false;
+    }
+    if (name === "" || !(/[a-z]/.test(name) || /[A-Z]/.test(name))) {
+        alert("Enter a valid name (alphabetic a-z or A-Z).");
         return false;
     }
     if (email === "") {
         alert("Email is required.");
         return false;
     }
-    if (!/^\d{11}$/.test(phone)) {
-        alert("Phone must be exactly 11 digits.");
+    if (phone === "" || !(/[0-9]/.test(phone) || phone.length === 11)) {
+        alert("Phone must be exactly 11 digits and contain only numbers.");
         return false;
     }
-    if (!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])/.test(password)) {
-        alert("Password must have uppercase, lowercase, digit, and special character.");
+    if (password === "" || !(/[a-z]/.test(password) || /[A-Z]/.test(password) || /[0-9]/.test(password) || /[@$!%*?&]/.test(password))) {
+        alert("Password must contain at least one lowercase, uppercase, digit, or special character.");
         return false;
     }
     if (!amount) {
