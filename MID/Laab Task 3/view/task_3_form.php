@@ -27,9 +27,7 @@
         <label><input type="radio" name="amount" value="1000"> 1000 BDT</label>
         <label><input type="radio" name="amount" value="2000"> 2000 BDT</label>
         <label><input type="radio" name="amount" value="3000"> 3000 BDT</label>
-        <label><input type="radio" name="amount" value="other"> Other</label>
       </div>
-      <input type="number" id="otherAmount" placeholder="Other Amount" disabled>
 
       <label>Payment Method</label>
       <div class="donation-options">
