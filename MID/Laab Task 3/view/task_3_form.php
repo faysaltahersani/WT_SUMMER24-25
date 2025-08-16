@@ -11,22 +11,22 @@
     <h2>Donor Information</h2>
     <form id="donationForm">
       <label>Name: </label>
-      <input type="text" id="name">
+      <input type="text" id="name" name="name">
       <label>Email: </label>
-      <input type="email" id="email">
+      <input type="email" id="email" name="email">
       <label>Phone: </label>
-      <input type="text" id="phone">
+      <input type="text" id="phone" name="phone">
       <label>Password: </label>
-      <input type="password" id="password">
+      <input type="password" id="password" name="password">
       
 
       <label>Donation Amount</label>
       <div class="donation-options">
-        <label><input type="radio" name="amount"> None</label>
-        <label><input type="radio" name="amount"> 500 BDT</label>
-        <label><input type="radio" name="amount"> 1000 BDT</label>
-        <label><input type="radio" name="amount"> 2000 BDT</label>
-        <label><input type="radio" name="amount"> 3000 BDT</label>
+        <label><input type="radio" name="amount" value="0"> None</label>
+        <label><input type="radio" name="amount" value="500"> 500 BDT</label>
+        <label><input type="radio" name="amount" value="1000"> 1000 BDT</label>
+        <label><input type="radio" name="amount" value="2000"> 2000 BDT</label>
+        <label><input type="radio" name="amount" value="3000"> 3000 BDT</label>
       </div>
 
       <label>Payment Method</label>

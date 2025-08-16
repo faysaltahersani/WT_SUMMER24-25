@@ -15,30 +15,37 @@ function validateForm() {
         alert("Please fill out the form!");
         return false;
     }
-    if (name === "" || !(/[a-z]/.test(name) || /[A-Z]/.test(name))) {
-        alert("Enter a valid name (alphabetic a-z or A-Z).");
+
+    if (name === "" || !/^[a-zA-Z\s]+$/.test(name)) {
+        alert("Name must contain only letters.");
         return false;
     }
-    if (email === "") {
-        alert("Email is required.");
-        return false;
+
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+    alert("Please enter a valid email address.");
+    return false;
     }
-    if (phone === "" || !(/[0-9]/.test(phone) || phone.length === 11)) {
+
+    if (!/^\d{11}$/.test(phone)) {
         alert("Phone must be exactly 11 digits and contain only numbers.");
         return false;
     }
-    if (password === "" || !(/[a-z]/.test(password) || /[A-Z]/.test(password) || /[0-9]/.test(password) || /[@$!%*?&]/.test(password))) {
-        alert("Password must contain at least one lowercase, uppercase, digit, or special character.");
+
+    if ( password === "" || !(/[a-z]/.test(password) && /[A-Z]/.test(password) && /[0-9]/.test(password) && /[!@#$%&*]/.test(password))) {
+        alert("Password must contain at least one lowercase, uppercase, digit, and special character.");
         return false;
     }
+
     if (!amount) {
         alert("Select a donation amount.");
         return false;
     }
+
     if (!payment) {
-        alert("Select a payment method.");
+        alert("Select your payment method.");
         return false;
     }
+
     if (!terms) {
         alert("You must agree to the Terms & Conditions.");
         return false;
